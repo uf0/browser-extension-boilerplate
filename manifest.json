@@ -8,7 +8,7 @@
     "48": "icons/icon-48.png",
     "96": "icons/icon-96.png"
   },
-  "permissions": ["activeTab", "tabs"],
+  "permissions": ["activeTab", "tabs", "storage"],
   "browser_action": {
     "default_icon": "icons/icon-96.png",
     "default_popup": "popup/index.html",
@@ -18,7 +18,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["assets/ready.min.js", "index.js"],
+      "js": ["assets/ready.min.js", "assets/jquery.js", "indexTwitter.js"],
       "css": ["style.css"]
     }
   ]

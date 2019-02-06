@@ -6,7 +6,13 @@ document.addEventListener(
   false
 );
 
+browser.storage.local.get("active").then(value => {
+  console.log(document.querySelector("#myonoffswitch").checked, value.active);
+  document.querySelector("#myonoffswitch").checked = value.active;
+});
+
 function changeEventHandler(event) {
+  browser.storage.local.set({ active: event.target.checked });
   sendMessage(event.target.checked);
 }
 

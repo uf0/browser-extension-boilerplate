@@ -1,0 +1,90 @@
+.my-text-to-emoji {
+  display: none;
+}
+
+.Emoji.Emoji--forText {
+  display: unset;
+}
+
+.my-beautiful-extension .my-text-to-emoji {
+  display: unset;
+}
+
+.my-beautiful-extension .tweet .Emoji.Emoji--forText {
+  display: none;
+}
+
+/* .my-beautiful-extension a {
+  color: red;
+  font-size: 18px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.my-beautiful-extension .mw-body {
+  background-color: black;
+} */
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.bigEmoji {
+  animation: rotating 2s linear infinite;
+  font-size: 20px;
+  display: inline-block;
+}
+
+.my-text-to-emoji {
+  font-size: 20px;
+  color: red;
+}
+/*
+.my-beautiful-extension .reference {
+  opacity: 0;
+}
+
+.my-beautiful-extension #ca-history {
+  transform: scale(4);
+  z-index: 999;
+}
+
+.my-beautiful-extension #stream-items-id li > div:not(.promoted-tweet) {
+  display: none;
+}
+
+
+.reference {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+
+
+#ca-history {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.my-beautiful-extension #ca-history {
+  transform: scale(4);
+  z-index: 999;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.my-beautiful-extension img {
+  animation: rotating 2s linear infinite;
+}
+*/
